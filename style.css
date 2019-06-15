@@ -1,0 +1,83 @@
+
+
+
+
+body{
+    background-color: rgba(211, 211, 211, 0.486);
+}
+/* Headers */
+header {
+    font-size: 20px;
+}
+
+
+
+
+/* Navigation Bar*/
+
+nav {
+    margin-right: 200px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a.nav {
+    float: right;
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+a.nav:hover {
+    background-color: tan; /*highlight text when hover mouse over*/
+}
+
+
+
+
+/* always have to define the box with margin and padding so 
+background-color to show*/
+
+#top-section {
+    margin: 0;
+    padding: 50px;
+    overflow: hidden;
+    background-color: rgba(131, 156, 63, 0.616);
+}
+
+#profile-name {
+    width: 30%;
+    margin: 10px;
+    float: left;
+    position: relative;
+    left: 150px;
+    top: 100px;
+}
+
+#profile-pic {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+/* use {position: relative} to move the picture */
+.mypic {
+    float: right;
+    position: relative;
+    right: 200px; /*the original position will be 50px apart to the right 
+    --> move picture to the left*/
+}
+
+
+
+
+#about-me {
+    clear: both; /* use {clear: both} to clear floats coming from either directions */
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
