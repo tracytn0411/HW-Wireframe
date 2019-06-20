@@ -1,83 +1,67 @@
 
 
-
-
-body{
-    background-color: rgba(211, 211, 211, 0.486);
-}
-/* Headers */
-header {
-    font-size: 20px;
-}
-
-
-
-
-/* Navigation Bar*/
-
-nav {
-    margin-right: 200px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-a.nav {
-    float: right;
+body {
+    background: #777;
+    width: 960px;
     display: block;
-    padding: 10px 15px;
-    color: black;
-    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.outside, nav, section, aside, footer {
+    background: #ebebeb;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+h1, h2, p {
+    font-family: importHelveticaNeue, Arial, Helvetica, sans-serif;
+    font-size: 18px;
     text-align: center;
-    font-size: 20px;
+    color: #777;
 }
 
-a.nav:hover {
-    background-color: tan; /*highlight text when hover mouse over*/
+@font-face {
+    font-family: importHelveticaNeue;
+    src: url(helveticaneue-light.otf)
 }
 
-
-
-
-/* always have to define the box with margin and padding so 
-background-color to show*/
-
-#top-section {
-    margin: 0;
-    padding: 50px;
-    overflow: hidden;
-    background-color: rgba(131, 156, 63, 0.616);
+h1, p {
+    color: #777;
 }
 
-#profile-name {
-    width: 30%;
+h2 {
+    color: #ebebeb;
+}
+
+p.h, p.p {
+    background: #ebebeb;
+    padding: 10px;
     margin: 10px;
+}
+
+article {
+    background: #777;
+    padding: 5px;
+    overflow: hidden;
+}
+
+section {
+    width: 495px;
     float: left;
-    position: relative;
-    left: 150px;
-    top: 100px;
+    overflow: hidden;;
 }
 
-#profile-pic {
+aside {
+    margin-left: 20px;
+    width: 405px;
     float: right;
-    padding: 0;
-    margin: 0;
 }
 
-/* use {position: relative} to move the picture */
-.mypic {
-    float: right;
-    position: relative;
-    right: 200px; /*the original position will be 50px apart to the right 
-    --> move picture to the left*/
+.equal {
+    display: flex;
 }
 
-
-
-
-#about-me {
-    clear: both; /* use {clear: both} to clear floats coming from either directions */
-    text-align: center;
-    padding-left: 400px;
-    padding-right: 400px;
+footer {
+    clear: both;
 }
